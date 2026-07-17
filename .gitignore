@@ -16,6 +16,9 @@ Thumbs.db
 # Config (contains API keys — use config.example.js as template)
 frontend/config.js
 
+# Assets - ignore screenshots (too large)
+*.png
+
 # Temp
 *.log
 *.tmp

@@ -34,7 +34,7 @@
     html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
     html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
     html = html.replace(/^- (.+)/gm, '<li>$1</li>');
-    html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+    html = html.replace(/(<li>[\s\S]*<\/li>)/, '<ul>$1</ul>');
     html = html.replace(/\n\n/g, '</p><p>');
     html = '<p>' + html + '</p>';
     html = html.replace(/<p><\/p>/g, '');
@@ -128,7 +128,7 @@
             addMessage('ai', aiText);
           }
         } catch (e) {
-          typing.remove();
+          if (typing.parentNode) typing.remove();
           addMessage('ai', 'Connection error. Please check your internet and API key.');
         }
       }

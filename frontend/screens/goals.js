@@ -37,7 +37,7 @@
                 '<div style="display:flex;justify-content:space-between;align-items:start">' +
                 '<div><div class="goal-icon">' + (g.icon || '🎯') + '</div>' +
                 '<div class="goal-name">' + g.name + '</div>' +
-                '<div class="goal-amounts">' + globalThis.formatCurrency(g.saved || 0) + ' / ' + globalThis.formatCurrency(g.target) + '</div></div>' +
+                '<div class="goal-amounts">' + g.formatCurrency(g.saved || 0) + ' / ' + g.formatCurrency(g.target) + '</div></div>' +
                 '<div style="text-align:right"><div style="font-size:22px;font-weight:800;color:var(--primary)">' + Math.round(pct) + '%</div>' +
                 '<div style="font-size:12px;color:var(--text-muted)">' + (g.deadline ? 'Due: ' + g.deadline : '') + '</div></div>' +
                 '</div>' +
