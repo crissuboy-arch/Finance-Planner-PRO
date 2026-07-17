@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+*.sublime-*
+
+# Config (contains API keys — use config.example.js as template)
+frontend/config.js
+
+# Temp
+*.log
+*.tmp

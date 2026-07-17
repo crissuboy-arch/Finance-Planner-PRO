@@ -1,0 +1,1 @@
+(function(){'use strict';document.addEventListener('DOMContentLoaded',()=>{const container=document.createElement('div');container.className='toast-container';document.body.appendChild(container)})})();

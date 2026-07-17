@@ -1,0 +1,1 @@
+(function(){'use strict';const g=globalThis;const KEY='finance_planner_pro';g.loadState=function(){try{const s=localStorage.getItem(KEY);if(s)return{...g.FPState,...JSON.parse(s)}}catch(e){}return g.FPState||{}};g.saveState=function(){try{localStorage.setItem(KEY,JSON.stringify(g.FPState))}catch(e){}};})();
